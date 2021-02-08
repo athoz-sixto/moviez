@@ -29,15 +29,16 @@
             </div>
             <div class="col-xl-12">
                 <div class="table-responsive">
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
+                    <table class="table table-striped table-sm">
+                        <thead> 
+                            <tr class="tr align-middle">
                                 <th>ID</th>
-                                <th>TITULO</th>
+                                <th>TITULO ORIGINAL</th>
                                 <th>TITULO EN ESPAÑOL</th>
                                 <th>AÑO</th>
                                 <th>PAIS</th>
                                 <th>DIRECTOR</th>
+                                <th>REPARTO</th>
                                 <th>GENERO</th>
                                 <th>SINOPSIS</th>
                                 <th>IMAGEN</th>
@@ -58,6 +59,7 @@
                                         <td>{{$pelicula->anio}}</td>
                                         <td>{{$pelicula->pais}}</td>
                                         <td>{{$pelicula->director}}</td>
+                                        <td>{{$pelicula->reparto}}</td>
                                         <td>{{$pelicula->genero}}</td>
                                         <td>{{$pelicula->sinopsis}}</td>
                                         <td><img src="{{$pelicula->imagen}}" width=100></td>

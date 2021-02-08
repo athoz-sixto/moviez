@@ -18,7 +18,7 @@ class MovieController extends Controller
         $texto=trim($request->get('txtabuscar'));
         //$peliculas=Pelicula::all();
         $peliculas=DB::table('peliculas')
-            ->select('id','titulo_original','titulo_esp','anio','pais','director','genero','sinopsis','imagen')
+            ->select('id','titulo_original','titulo_esp','anio','pais','director','reparto','genero','sinopsis','imagen')
             ->where('titulo_original','LIKE','%'.$texto.'%')
             ->orWhere('titulo_esp','LIKE','%'.$texto.'%')
             ->orderBy('titulo_original','asc')
@@ -51,6 +51,7 @@ class MovieController extends Controller
         $pelicula->anio = $request->input('anio');
         $pelicula->pais = $request->input('pais');
         $pelicula->director = $request->input('director');
+        $pelicula->reparto = $request->input('reparto');
         $pelicula->genero = $request->input('genero');
         $pelicula->sinopsis = $request->input('sinopsis');
         $pelicula->imagen = $request->input('imagen');
@@ -96,6 +97,7 @@ class MovieController extends Controller
         $pelicula->anio = $request->input('anio');
         $pelicula->pais = $request->input('pais');
         $pelicula->director = $request->input('director');
+        $pelicula->reparto = $request->input('reparto');
         $pelicula->genero = $request->input('genero');
         $pelicula->sinopsis = $request->input('sinopsis');
         $pelicula->imagen = $request->input('imagen');

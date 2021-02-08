@@ -11,7 +11,7 @@ class Pelicula extends Model
     protected $table="peliculas";
     protected $primaryKey="id";
     protected $fillable = [
-        'titulo_original','titulo_esp','anio','pais','director','genero','sinopsis','imagen' 
+        'titulo_original','titulo_esp','anio','pais','director','reparto','genero','sinopsis','imagen' 
     ];
     public $timestamps = false;
 

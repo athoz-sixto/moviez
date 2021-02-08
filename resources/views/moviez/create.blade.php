@@ -35,6 +35,10 @@
                         <input type="text" class="form-control" name="director" required maxlength="30">
                     </div>
                     <div class="form-group">
+                        <label for="reparto">Reparto</label>
+                        <input type="text" class="form-control" name="reparto" required maxlength="200">
+                    </div>
+                    <div class="form-group">
                         <label for="genero">Género</label>
                         <input type="text" class="form-control" name="genero" required maxlength="60">
                     </div>
